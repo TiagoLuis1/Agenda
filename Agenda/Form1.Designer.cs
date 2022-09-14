@@ -36,6 +36,8 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.dgwTabela = new System.Windows.Forms.DataGridView();
+            this.btnDeletar = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgwTabela)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,7 +45,7 @@
             // 
             this.btnInserir.Location = new System.Drawing.Point(46, 190);
             this.btnInserir.Name = "btnInserir";
-            this.btnInserir.Size = new System.Drawing.Size(141, 44);
+            this.btnInserir.Size = new System.Drawing.Size(216, 44);
             this.btnInserir.TabIndex = 0;
             this.btnInserir.Text = "INSERIR";
             this.btnInserir.UseVisualStyleBackColor = true;
@@ -106,13 +108,35 @@
             this.dgwTabela.Name = "dgwTabela";
             this.dgwTabela.Size = new System.Drawing.Size(697, 150);
             this.dgwTabela.TabIndex = 7;
-            this.dgwTabela.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwTabela_CellContentClick);
+            this.dgwTabela.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwTabela_CellDoubleClick);
+            // 
+            // btnDeletar
+            // 
+            this.btnDeletar.Location = new System.Drawing.Point(268, 189);
+            this.btnDeletar.Name = "btnDeletar";
+            this.btnDeletar.Size = new System.Drawing.Size(238, 46);
+            this.btnDeletar.TabIndex = 8;
+            this.btnDeletar.Text = "DELETAR";
+            this.btnDeletar.UseVisualStyleBackColor = true;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(512, 189);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(231, 47);
+            this.btnUpdate.TabIndex = 9;
+            this.btnUpdate.Text = "ALTERAR";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.dgwTabela);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtNome);
@@ -139,6 +163,8 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.DataGridView dgwTabela;
+        private System.Windows.Forms.Button btnDeletar;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }
 
