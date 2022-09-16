@@ -38,6 +38,10 @@
             this.dgwTabela = new System.Windows.Forms.DataGridView();
             this.btnDeletar = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
+            this.txtPesquisar = new System.Windows.Forms.TextBox();
+            this.btnPesquisar = new System.Windows.Forms.Button();
+            this.rbEmail = new System.Windows.Forms.RadioButton();
+            this.rbNome = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgwTabela)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +49,7 @@
             // 
             this.btnInserir.Location = new System.Drawing.Point(46, 190);
             this.btnInserir.Name = "btnInserir";
-            this.btnInserir.Size = new System.Drawing.Size(216, 44);
+            this.btnInserir.Size = new System.Drawing.Size(217, 44);
             this.btnInserir.TabIndex = 0;
             this.btnInserir.Text = "INSERIR";
             this.btnInserir.UseVisualStyleBackColor = true;
@@ -112,9 +116,9 @@
             // 
             // btnDeletar
             // 
-            this.btnDeletar.Location = new System.Drawing.Point(268, 189);
+            this.btnDeletar.Location = new System.Drawing.Point(269, 190);
             this.btnDeletar.Name = "btnDeletar";
-            this.btnDeletar.Size = new System.Drawing.Size(238, 46);
+            this.btnDeletar.Size = new System.Drawing.Size(251, 46);
             this.btnDeletar.TabIndex = 8;
             this.btnDeletar.Text = "DELETAR";
             this.btnDeletar.UseVisualStyleBackColor = true;
@@ -122,19 +126,62 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(512, 189);
+            this.btnUpdate.Location = new System.Drawing.Point(526, 190);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(231, 47);
+            this.btnUpdate.Size = new System.Drawing.Size(217, 47);
             this.btnUpdate.TabIndex = 9;
             this.btnUpdate.Text = "ALTERAR";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // txtPesquisar
+            // 
+            this.txtPesquisar.Location = new System.Drawing.Point(526, 65);
+            this.txtPesquisar.Name = "txtPesquisar";
+            this.txtPesquisar.Size = new System.Drawing.Size(100, 20);
+            this.txtPesquisar.TabIndex = 10;
+            // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.Location = new System.Drawing.Point(632, 63);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(111, 23);
+            this.btnPesquisar.TabIndex = 11;
+            this.btnPesquisar.Text = "PESQUISAR";
+            this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
+            // 
+            // rbEmail
+            // 
+            this.rbEmail.AutoSize = true;
+            this.rbEmail.Location = new System.Drawing.Point(526, 98);
+            this.rbEmail.Name = "rbEmail";
+            this.rbEmail.Size = new System.Drawing.Size(110, 17);
+            this.rbEmail.TabIndex = 12;
+            this.rbEmail.TabStop = true;
+            this.rbEmail.Text = "Procurar por email";
+            this.rbEmail.UseVisualStyleBackColor = true;
+            // 
+            // rbNome
+            // 
+            this.rbNome.AutoSize = true;
+            this.rbNome.Location = new System.Drawing.Point(526, 121);
+            this.rbNome.Name = "rbNome";
+            this.rbNome.Size = new System.Drawing.Size(112, 17);
+            this.rbNome.TabIndex = 13;
+            this.rbNome.TabStop = true;
+            this.rbNome.Text = "Procurar por nome";
+            this.rbNome.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.rbNome);
+            this.Controls.Add(this.rbEmail);
+            this.Controls.Add(this.btnPesquisar);
+            this.Controls.Add(this.txtPesquisar);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.dgwTabela);
@@ -165,6 +212,10 @@
         private System.Windows.Forms.DataGridView dgwTabela;
         private System.Windows.Forms.Button btnDeletar;
         private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.TextBox txtPesquisar;
+        private System.Windows.Forms.Button btnPesquisar;
+        private System.Windows.Forms.RadioButton rbEmail;
+        private System.Windows.Forms.RadioButton rbNome;
     }
 }
 
